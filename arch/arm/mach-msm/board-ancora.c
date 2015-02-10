@@ -1986,7 +1986,7 @@ void msm_snddev_poweramp_on_speaker(void)
 #ifdef CONFIG_SENSORS_YDA165
 	yda165_speaker_onoff(1);
 #endif
-	pr_info("%s: power on amplifier\n", __func__);
+	pr_debug("%s: power on amplifier\n", __func__);
 }
 
 void msm_snddev_poweramp_off_speaker(void)
@@ -1994,21 +1994,21 @@ void msm_snddev_poweramp_off_speaker(void)
 #ifdef CONFIG_SENSORS_YDA165
 	yda165_speaker_onoff(0);
 #endif
-	pr_info("%s: power off amplifier\n", __func__);
+	pr_debug("%s: power off amplifier\n", __func__);
 }
 void msm_snddev_poweramp_on_speaker_call(void)
 {
 #ifdef CONFIG_SENSORS_YDA165
 	yda165_speaker_call_onoff(1);
 #endif
-	pr_info("%s: power on amplifier\n", __func__);
+	pr_debug("%s: power on amplifier\n", __func__);
 }
 void msm_snddev_poweramp_off_speaker_call(void)
 {
 #ifdef CONFIG_SENSORS_YDA165
 	yda165_speaker_call_onoff(0);
 #endif
-	pr_info("%s: power off amplifier\n", __func__);
+	pr_debug("%s: power off amplifier\n", __func__);
 }
 void msm_snddev_poweramp_on_headset(void)
 {
