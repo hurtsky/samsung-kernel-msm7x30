@@ -31,7 +31,7 @@
 #include <asm/ioctls.h>
 
 #ifndef CONFIG_LOGCAT_SIZE
-#define CONFIG_LOGCAT_SIZE 256
+#define CONFIG_LOGCAT_SIZE 64
 #endif
 
 /*
@@ -39,7 +39,7 @@
  * 1 - Auto Suspend
  * 2 - Disabled
  */
-static unsigned int log_mode = 2;
+static unsigned int log_mode 	= 0;
 static unsigned int log_enabled = 1; // Do not change this value
 
 module_param(log_mode, uint, S_IWUSR | S_IRUGO);
